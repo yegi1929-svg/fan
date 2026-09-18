@@ -1,0 +1,14 @@
+@page "/practice/body"
+@using FanchantPractice.Core
+@using FanchantPractice.Shared
+<PageTitle>BODY 연습 | Fanchant Practice</PageTitle>
+<header class="practice-head"><a href="songs" aria-label="뒤로">←</a><div><p class="eyebrow">PRACTICE</p><h1>BODY</h1><p>HIGHLIGHT · Switch On</p></div><button class="icon-button" aria-label="즐겨찾기">♡</button></header>
+<section class="player-card">
+  <div class="chant-context previous">이전 응원 구간</div>
+  <div class="active-chant"><span class="status-badge">준비 중</span><strong>로컬 음원을 선택해 주세요</strong><p>음원과 공식 응원법 타이밍은 다음 단계에서 연결됩니다.</p></div>
+  <div class="chant-context next">다음 응원 구간</div>
+  <div class="progress-track"><span></span></div><div class="time-row"><span>00:00</span><span>--:--</span></div>
+  <div class="player-controls"><button aria-label="5초 전">−5</button><button class="play-button" aria-label="재생" disabled>▶</button><button aria-label="5초 후">+5</button></div>
+  <label class="file-action">기기에서 음원 선택<input type="file" accept="audio/*" /></label>
+</section>
+<section class="source-card"><h2>공식 응원법 출처</h2><p>응원법 전문은 저장하지 않고 공식 안내 페이지를 연결합니다.</p><a href="@PilotData.Body.SourceUrl" target="_blank" rel="noopener">Around US 공식 안내 보기</a></section>

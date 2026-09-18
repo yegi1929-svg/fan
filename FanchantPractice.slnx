@@ -1,6 +1,9 @@
 <Solution>
   <Folder Name="/src/">
     <Project Path="src/FanchantPractice.App/FanchantPractice.App.csproj" />
+    <Project Path="src/FanchantPractice.Core/FanchantPractice.Core.csproj" />
+    <Project Path="src/FanchantPractice.Shared/FanchantPractice.Shared.csproj" />
+    <Project Path="src/FanchantPractice.Web/FanchantPractice.Web.csproj" />
   </Folder>
   <Folder Name="/tests/">
     <Project Path="tests/FanchantPractice.Tests/FanchantPractice.Tests.csproj" />

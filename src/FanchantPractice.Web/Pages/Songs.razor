@@ -1,0 +1,6 @@
+@page "/songs"
+@using FanchantPractice.Core
+<PageTitle>곡 | Fanchant Practice</PageTitle>
+<header class="page-heading"><p class="eyebrow">SONGS</p><h1>곡별 응원법</h1><p>현재 사용 중인 응원법을 확인하고 연습합니다.</p></header>
+<label class="search-box"><span>검색</span><input placeholder="곡 제목을 입력하세요" aria-label="곡 검색" /></label>
+<article class="list-card"><div><span class="status-badge">공식 출처</span><h2>@PilotData.Body.Title</h2><p>@PilotData.Body.Album · @PilotData.Body.ReleaseDate.Year</p></div><a class="round-action" href="practice/body" aria-label="BODY 연습 열기">→</a></article>

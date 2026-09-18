@@ -1,0 +1,9 @@
+@page "/"
+@using FanchantPractice.Core
+@using FanchantPractice.Shared
+<PageTitle>홈 | Fanchant Practice</PageTitle>
+<section class="hero"><p class="eyebrow">LIGHT UP THE CHANT</p><h1>오늘도 응원 준비하기</h1><p>셋리스트를 따라 연습하고, 헷갈리는 구간만 다시 반복해 보세요.</p><a class="primary-action" href="practice/body">BODY 연습 시작</a></section>
+<section class="section"><div class="section-heading"><div><p class="eyebrow">FIRST PILOT</p><h2>첫 번째 연습곡</h2></div><a href="songs">전체 보기</a></div>
+  <article class="song-feature"><div class="cover-art"><span>BODY</span><small>Switch On</small></div><div class="song-copy"><span class="status-badge">공식 응원법 확인</span><h3>BODY</h3><p>HIGHLIGHT · Switch On · 2024</p><div class="member-list">@foreach(var member in PilotData.Members){<MemberBadge Name="@member.Name" Color="@member.Color" />}</div><a class="secondary-action" href="practice/body">연습 화면 열기</a></div></article>
+</section>
+<section class="section"><h2>연습 현황</h2><div class="stats-grid"><article class="stat-card"><strong>1</strong><span>등록된 곡</span></article><article class="stat-card"><strong>0</strong><span>완료한 연습</span></article><article class="stat-card"><strong>0분</strong><span>누적 연습</span></article></div></section>
