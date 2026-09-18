@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/FanchantPractice.App/FanchantPractice.App.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/FanchantPractice.Tests/FanchantPractice.Tests.csproj" />
+  </Folder>
+</Solution>

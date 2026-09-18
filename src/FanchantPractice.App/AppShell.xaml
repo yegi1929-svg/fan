@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="FanchantPractice.App.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:FanchantPractice.App.Views"
+    Title="Fanchant Practice"
+    Shell.BackgroundColor="{StaticResource BackgroundBase}"
+    Shell.ForegroundColor="{StaticResource TextPrimary}"
+    Shell.TabBarBackgroundColor="{StaticResource BackgroundSurface}"
+    Shell.TabBarForegroundColor="{StaticResource BrandGray}"
+    Shell.TabBarTitleColor="{StaticResource TextPrimary}">
+
+    <TabBar>
+        <ShellContent Title="홈" Route="home" ContentTemplate="{DataTemplate views:HomePage}" />
+        <ShellContent Title="콘서트" Route="concerts" ContentTemplate="{DataTemplate views:ConcertsPage}" />
+        <ShellContent Title="곡" Route="songs" ContentTemplate="{DataTemplate views:SongsPage}" />
+        <ShellContent Title="보관함" Route="library" ContentTemplate="{DataTemplate views:LibraryPage}" />
+    </TabBar>
+
+</Shell>
