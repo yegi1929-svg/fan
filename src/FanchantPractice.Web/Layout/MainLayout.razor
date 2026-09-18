@@ -1,6 +1,11 @@
 @inherits LayoutComponentBase
 <div class="app-shell">
-  <header class="topbar"><a class="brand" href="/"><span class="brand-mark">✦</span><span>Fanchant Practice</span></a><span class="pilot-label">BODY PILOT</span></header>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Fanchant Practice 홈">
+      <span>Fanchant</span><span class="brand-motif"><img src="icons/rose.svg" alt="" /><img src="icons/bulb.svg" alt="" /></span><span>Practice</span>
+    </a>
+    <a class="profile-link" href="profile"><span class="profile-avatar">L</span><span>나의 프로필</span></a>
+  </header>
   <main class="main-content">@Body</main>
   <NavMenu />
 </div>

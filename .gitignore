@@ -11,3 +11,4 @@ obj/
 *.keystore
 *.p12
 local.settings.json
+work/
