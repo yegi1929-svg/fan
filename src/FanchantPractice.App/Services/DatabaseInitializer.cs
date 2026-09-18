@@ -20,5 +20,25 @@ public sealed class DatabaseInitializer(AppDatabase database) : IDatabaseInitial
             new Member { ArtistId = artist.Id, Name = "이기광", SymbolColor = "#57C785", SortOrder = 3 },
             new Member { ArtistId = artist.Id, Name = "손동운", SymbolColor = "#A87CFF", SortOrder = 4 }
         });
+
+        var body = new Song
+        {
+            ArtistId = artist.Id,
+            Title = "BODY",
+            AlbumName = "Switch On",
+            ReleaseDate = new DateTime(2024, 3, 11),
+            SearchText = "BODY 바디 Switch On 하이라이트 HIGHLIGHT"
+        };
+        await database.Connection.InsertAsync(body);
+        await database.Connection.InsertAsync(new Fanchant
+        {
+            SongId = body.Id,
+            Title = "BODY 현재 응원법",
+            Description = "공식 응원법 영상을 기준으로 타이밍 검수 예정",
+            VerificationStatus = 1,
+            SourceName = "Around US Entertainment - BODY 응원법",
+            SourceUrl = "https://www.aroundusent.com/staffNotice/detail/68?category_idx=&page=1",
+            UpdatedAt = new DateTime(2024, 3, 12)
+        });
     }
 }
